@@ -12,7 +12,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-  origin: "https://notesify.vercel.app",
+  origin: "https://notesify-ten.vercel.app",
 }));
 app.use(express.json());
 app.use("/api/auth", authRoutes);
