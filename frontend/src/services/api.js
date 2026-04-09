@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://notesify-2.onrender.com/",
+  baseURL: "https://notesify-2.onrender.com/api",
 });
 
 // attach token (NO Bearer)
