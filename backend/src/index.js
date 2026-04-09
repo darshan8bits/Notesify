@@ -5,7 +5,7 @@ import authRoutes from "./routes/auth.js";
 import authMiddleware from "./middleware/auth.js";
 import notesRoutes from "./routes/notes.js";
 
-const PORT = 5000 || process.env.PORT
+const PORT = process.env.PORT || 10000
 
 dotenv.config();
 
@@ -18,10 +18,6 @@ app.use("/api/notes", notesRoutes);
 
 app.get("/", (req, res) => {
     res.send("API is running...");
-});
-
-app.get("/protected", authMiddleware, (req, res) => {
-  res.json({ message: "Protected route accessed!", user: req.user });
 });
 
 app.listen(PORT, ()=>{
