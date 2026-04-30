@@ -19,7 +19,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/notes", notesRoutes);
 
 app.get("/", (req, res) => {
-    res.send("API is running...");
+    res.send("API is running!");
 });
 
 app.listen(PORT, ()=>{
