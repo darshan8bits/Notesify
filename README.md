@@ -1,1 +1,1 @@
-Just an app for practice
+Built for backend practice purpose.
